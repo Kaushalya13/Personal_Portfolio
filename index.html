@@ -97,39 +97,88 @@
     </div>
 </section>
 
-<!-- --------------- SERVICE --------------- -->
+<!-- --------------- SKILLS --------------- -->
 <section id="skills" class="service" >
     <div class="section__container service__container">
-        <h2 class="section__title02"> Skills</h2>
+        <h2 class="section__title02"> SKILLS</h2>
         <div class="service__grid">
 
             <div class="service__card">
-                <h4>BackEnd</h4>
-                <span>PHP</span>
-                <span>JAVA</span>
-                <span>Python</span>
-                <span>C++</span>
-                <a href="#" class="read__more">Read more...</a>
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="assets/images/java.png">
+                    </div>
+                    <h3>Java</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Autem, eligendi est ipsa magni maxime nostrum perspiciatis sunt unde!
+                    Consequuntur deserunt dolorum eum fugiat laborum,
+                    modi nam nobis non obcaecati officiis?</p>
             </div>
+
             <div class="service__card">
-                <i class="ri-edit-2-line"></i>
-                <h4>Front End</h4>
-                <p>
-                    Our approach is collaborative, and we encourage your feedback
-                    throughout the design process to ensure that we are meeting your
-                    expectations.
-                </p>
-                <a href="#" class="read__more">Read more...</a>
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="assets/images/CSS.png">
+                    </div>
+                    <h3>CSS</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Autem, eligendi est ipsa magni maxime nostrum perspiciatis sunt unde!
+                    Consequuntur deserunt dolorum eum fugiat laborum,
+                    modi nam nobis non obcaecati officiis?</p>
             </div>
+
             <div class="service__card">
-                <i class="ri-edit-2-line"></i>
-                <h4>Creative Design</h4>
-                <p>
-                    Our approach is collaborative, and we encourage your feedback
-                    throughout the design process to ensure that we are meeting your
-                    expectations.
-                </p>
-                <a href="#" class="read__more">Read more...</a>
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="assets/images/img.png">
+                    </div>
+                    <h3>HTML</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Autem, eligendi est ipsa magni maxime nostrum perspiciatis sunt unde!
+                    Consequuntur deserunt dolorum eum fugiat laborum,
+                    modi nam nobis non obcaecati officiis?</p>
+            </div>
+
+            <div class="service__card">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="assets/images/MySQL-Logo.jpg">
+                    </div>
+                    <h3>MySQL</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Autem, eligendi est ipsa magni maxime nostrum perspiciatis sunt unde!
+                    Consequuntur deserunt dolorum eum fugiat laborum,
+                    modi nam nobis non obcaecati officiis?</p>
+            </div>
+
+            <div class="service__card">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="assets/images/js.png">
+                    </div>
+                    <h3>Java Script</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Autem, eligendi est ipsa magni maxime nostrum perspiciatis sunt unde!
+                    Consequuntur deserunt dolorum eum fugiat laborum,
+                    modi nam nobis non obcaecati officiis?</p>
+            </div>
+
+            <div class="service__card">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="assets/images/vs.jpg">
+                    </div>
+                    <h3>VS CODE</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Autem, eligendi est ipsa magni maxime nostrum perspiciatis sunt unde!
+                    Consequuntur deserunt dolorum eum fugiat laborum,
+                    modi nam nobis non obcaecati officiis?</p>
             </div>
         </div>
     </div>
@@ -138,8 +187,7 @@
 <!-- --------------- PROJECT --------------- -->
 <section class="project" id="projects">
     <div class="section__container project__container">
-        <!--        <p class="section__subtitle">Portfolio</p>-->
-        <h2 class="section__title02"><span>Latest</span> Project</h2>
+        <h2 class="section__title02"><span>LATEST</span> PROJECT</h2>
         <div class="project__grid">
             <div class="project__card">
                 <img src="assets/images/project01.png" alt="project"/>
@@ -204,14 +252,16 @@
                 <a href="mailto:nimanthikaushalya13@gmail.com" target="_blank" class="icon"><i class="ri-mail-line"></i></a>
             </div>
         </div>
-        <form class="footer__form">
-            <input type="text"   placeholder="Your Name" />
-            <input type="text" placeholder="Your Email Address" />
-            <input type="text" placeholder="Your Phone Number" />
-            <textarea cols="30" rows="10" placeholder="Your Idea"></textarea>
-            <button type="submit" class="btn">Send Message</button>
+        <form class="footer__form" action="https://formsubmit.co/nimanthikaushalya13@gmail.com" method="POST">
+            <input type="text"  placeholder="Your Name" name="name" required />
+            <input type="email"  placeholder="Your Email Address" name="email" required />
+            <input type="number"  placeholder="Your Phone Number" name="number" required />
+            <textarea cols="30" rows="10"  placeholder="Your Idea" name="msg" required></textarea>
+            <button type="submit" class="btn">Submit</button>
         </form>
     </div>
+
+
 </footer>
 
 <!-- --------------- FOOTER --------------- -->
