@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <title>Portfolio</title>
     <link rel="stylesheet" href="assets/document/CV.pdf"/>
     <link rel="stylesheet" href="assets/style.css"/>
@@ -31,12 +32,16 @@
                 <div class="circle"></div>
             </li>
             <li class="nav_list">
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contactPage" class="nav-link">Contact</a>
                 <div class="circle"></div>
             </li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </div>
-
 </nav>
 
 <!-- --------------- HOME --------------- -->
@@ -53,8 +58,7 @@
         </p>
         <div class="action__btns">
             <button class="btn">
-                <a href="#aboutMe" class="nav-link">About</a>
-                <div class="circle"></div>
+                <a href="#aboutMe" class="nav-link">Show More</a>
             </button>
         </div>
         <br><br>
@@ -177,10 +181,10 @@
     </div>
 </section>
 
-<!-- --------------- FOOTER --------------- -->
-<footer class="footer">
+<!-- --------------- CONTACT --------------- -->
+<footer class="contact" id="contactPage">
     <div class="section__container footer__container">
-        <div class="footer__content" id="contact">
+        <div class="footer__content">
             <h2 class="section__title">Contact <span>Me!</span></h2>
             <p class="section__subtitle">If you have any project in your mind</p>
             <div class="footer__details">
@@ -201,7 +205,7 @@
             </div>
         </div>
         <form class="footer__form">
-            <input type="text" placeholder="Your Name" />
+            <input type="text"   placeholder="Your Name" />
             <input type="text" placeholder="Your Email Address" />
             <input type="text" placeholder="Your Phone Number" />
             <textarea cols="30" rows="10" placeholder="Your Idea"></textarea>
@@ -210,6 +214,11 @@
     </div>
 </footer>
 
+<!-- --------------- FOOTER --------------- -->
+<footer>
+    <div class="copy">@Copyright developed by Niwanthi Kaushalya | All rights reserved</a></div>
+</footer>
 
+<script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -138,6 +138,7 @@ nav{
     font-size: 28px;
     cursor: pointer;
 }
+
 .active-link{
     position: relative;
     color: var(--text-light);
@@ -155,6 +156,20 @@ nav{
     border-radius: 50%;
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
 
 header {
     height: 100vh;
@@ -199,12 +214,14 @@ header {
     background: var(--white);
 }
 
-.about,
-.project {
+.about{
     background: linear-gradient(to right bottom,#F2ECB6,#F2ECB6);
 }
 
-.footer{
+.project{
+    background: linear-gradient(to right bottom,#F2ECB6,#F2ECB6);
+}
+.contact{
     background-color: var(--text-dark);
 }
 .about__container {
@@ -367,6 +384,56 @@ footer {
 }
 
 /* Media queries */
+@media (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav_menu_list{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: #F2ECB6;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav_list{
+        margin: 16px 0;
+    }
+    .nav_menu_list.active{
+        left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-menu-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__container h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .service__grid,
+    .project__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 @media (min-width: 640px) {
 
@@ -410,14 +477,36 @@ footer {
     }
 }
 
-@media (min-width: 768px) {
-    .header__container h1 {
-        font-size: 5rem;
-        line-height: 5rem;
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color);
+    padding-bottom: 20px;
+}
+
+.copy{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:767px){
+    .heading{
+        text-align: left;
+    }
+    .square{
+        padding: 0px 30px !important;
+        margin-top: 10px!important;
     }
 
-    .service__grid,
-    .project__grid {
-        grid-template-columns: repeat(3, 1fr);
+    .p-list li , .l-list li , .contact li{
+        text-align: left;
+    }
+    .social-media{
+        padding-left: 0!important;
+    }
+
+    .social-media li{
+        margin: 5px;
     }
 }
